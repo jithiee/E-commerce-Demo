@@ -19,10 +19,15 @@ const Navbar = () => {
         <li>
           <NavLink to="/">Home</NavLink>
         </li>
-
-        <li>
+    { is_loggedin ?
+    <li>
           <NavLink to="/products">Products</NavLink>
         </li>
+        :
+        
+        ""
+        }
+        
       </ul>
  { 
  
