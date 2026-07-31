@@ -1,0 +1,52 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "jithin",
+      "email": "jithin@gmail.com",
+      "password": "682641326hasfdasAAahksa&^"
+    },
+    {
+      "id": 2,
+      "username": "jithin",
+      "email": "jithin@gmail.com",
+      "password": "682641326hasfdasAAahksa&^"
+    },
+    {
+      "username": "sadfasd",
+      "email": "ajoy@gmail.com",
+      "password": "sasfdasdf",
+      "id": 3
+    },
+    {
+      "username": "jithin",
+      "email": "ajoy@gmail.com",
+      "password": "dasdasdfasd",
+      "id": 4
+    },
+    {
+      "username": "asdf",
+      "email": "ajoy@gmail.com",
+      "password": "sdfasdf",
+      "id": 5
+    },
+    {
+      "username": "raju",
+      "email": "jithisn@gmail.com",
+      "password": "jithinaakhfals",
+      "id": 6
+    },
+    {
+      "username": "admin",
+      "email": "admin@gmail.com",
+      "password": "admin",
+      "id": 7
+    },
+    {
+      "username": "terry",
+      "email": "terryjin68501@gmail.com",
+      "password": "terry@#$$234AAaa",
+      "id": 8
+    }
+  ]
+}
