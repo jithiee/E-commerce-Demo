@@ -20,7 +20,7 @@ const Navbar = () => {
           <NavLink to="/">Home</NavLink>
         </li>
     { is_loggedin ?
-    <li>
+        <li>
           <NavLink to="/products">Products</NavLink>
         </li>
         :
@@ -33,9 +33,16 @@ const Navbar = () => {
  
  is_loggedin ? 
     <div className="auth-buttons">
-        <Link to="" className="login-btn">
+        {/* <Link to="" className="login-btn">
           Profile
-        </Link>
+        </Link> */}
+
+     <div className="profile-dropdown">
+        <select className="profile-select">
+          <option>👤 Profile</option>
+          <option>🛒 Cart Items</option>
+        </select>
+    </div>
 
       </div>
  

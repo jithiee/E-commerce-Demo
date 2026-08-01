@@ -102,4 +102,35 @@
   }
 }
 
+.profile-dropdown {
+    display: flex;
+    align-items: center;
+}
 
+.profile-select {
+    padding: 10px 16px;
+    min-width: 170px;
+    border: 2px solid #2563eb;
+    border-radius: 8px;
+    background-color: #fff;
+    color: #333;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.profile-select:hover {
+    border-color: #1d4ed8;
+}
+
+.profile-select:focus {
+    border-color: #1d4ed8;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
+}
+
+.profile-select option {
+    padding: 10px;
+    font-size: 15px;
+}

@@ -1,7 +1,7 @@
 import React from "react";
 import "./ProductList.css";
 
-const ProductList = ({ products }) => {
+const ProductList = ({ products , navigate }) => {
   return (
     <div className="products-container">
       {products.map((product) => (
@@ -37,7 +37,7 @@ const ProductList = ({ products }) => {
               Stock: {product.stock}
             </div>
 
-            <button>View Details</button>
+            <button onClick={()=>navigate(`/products/${product.id}`)}>View Details</button>
           </div>
         </div>
       ))}
