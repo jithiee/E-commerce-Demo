@@ -1,17 +1,33 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./Home.css";
 import { UserContext } from "../../context/UserContext";
+import Loading from "../../components/Loading";
 
 const Home = () => {
   const navigate = useNavigate();
   const { is_loggedin, setIsLoggedin } = useContext(UserContext);
+  const [loading , setLoading] = useState(true)
+
+  
+  useEffect(()=>{
+    let timer = setTimeout(()=>{
+         setLoading(false)
+    }, 2500)
+    return ()=>{
+      clearTimeout(timer)
+    }
+  })
 
   const logoutUser = () => {
     localStorage.setItem("is_loggedin", "false");
     setIsLoggedin(false);
     navigate("/login");
   };
+
+if(loading){
+  return <Loading/>
+}
 
   return (
     <div className="home-container">
