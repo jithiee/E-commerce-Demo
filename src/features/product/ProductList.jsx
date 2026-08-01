@@ -1,9 +1,10 @@
 import React from "react";
 import "./ProductList.css";
 
-const ProductList = ({ products , navigate }) => {
+const ProductList = ({ products , navigate , Loading}) => {
   return (
     <div className="products-container">
+      { Loading && <h1>Loading........</h1> }
       {products.map((product) => (
         <div className="product-card" key={product.id}>
           <img
