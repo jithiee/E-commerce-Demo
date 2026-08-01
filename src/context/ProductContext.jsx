@@ -6,7 +6,7 @@ export const ProductContext = createContext()
 
 const ProductProvider =({children})=>{
     const [products , setProducts ] = useState([])
-    const [Loading , setLoading ] = useState(false)
+    const [loading , setLoading ] = useState(false)
 
     useEffect(()=>{
         fetchProducts()
@@ -25,7 +25,7 @@ const ProductProvider =({children})=>{
         <ProductContext.Provider value={{
             products ,
             setProducts ,
-            Loading , 
+            loading , 
             setLoading
         }}>
              {children}

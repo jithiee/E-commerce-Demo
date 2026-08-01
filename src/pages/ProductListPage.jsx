@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom';
 
 const ProductListPage = () => {
 
-  const {products , Loading } = useContext(ProductContext)
+  const {products , loading } = useContext(ProductContext)
   const navigate = useNavigate()
   
   return (
@@ -13,7 +13,7 @@ const ProductListPage = () => {
       <ProductList
        products={products}
        navigate={navigate}
-       Loading={Loading}
+       loading={loading}
       />
     </div>
   );
