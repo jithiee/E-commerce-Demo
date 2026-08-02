@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import { ProductContext } from "../../context/ProductContext";
 import { Link, useParams } from "react-router-dom";
 import "./ProductDetails.css";
+import Loading from "../../components/Loading";
 
 const ProductDetails = ({
     products,
@@ -13,7 +14,7 @@ const ProductDetails = ({
   if (!product) {
     return (
       <div className="product-details-container">
-        <h2 className="not-found">Product Not Found</h2>
+       <Loading/>
       </div>
     );
   }
