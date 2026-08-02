@@ -5,8 +5,8 @@ import "./ProductDetails.css";
 
 const ProductDetails = ({
     products,
-    id ,
-    product
+    product , 
+    handleCartItems ,
 }) => {
 
 
@@ -61,7 +61,9 @@ const ProductDetails = ({
             </div>
           </div>
 
-          <button className="add-cart-btn">
+          <button className="add-cart-btn"
+          onClick={handleCartItems}
+          >
             Add to Cart
           </button>
         </div>

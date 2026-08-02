@@ -1,11 +1,36 @@
-import React from "react";
+import React, { useState } from "react";
 import "./ProductList.css";
 import Loading from "../../components/Loading";
 
-const ProductList = ({ products , navigate , loading}) => {
+const ProductList = ({ 
+  products , 
+  navigate ,
+  loading ,
+  inputData,
+  handleChange
+}) => {
+ 
+ 
+
   return (
+    <>
+      <div className="search-container">
+      <input
+        type="search"
+        value={inputData}
+        placeholder="Search products..."
+        onChange={handleChange}
+        className="search-input"
+      />
+    </div>
     <div className="products-container">
+
       { loading &&  <div>  <Loading/></div> }
+      {  products.length == 0 &&     
+      <div className="no-products">
+        <h3>No Products Found</h3>
+        <p>We couldn't find any products matching your search.</p>
+      </div> }
       {products.map((product) => (
         <div className="product-card" key={product.id}>
           <img
@@ -44,6 +69,7 @@ const ProductList = ({ products , navigate , loading}) => {
         </div>
       ))}
     </div>
+      </>
   );
 };
 

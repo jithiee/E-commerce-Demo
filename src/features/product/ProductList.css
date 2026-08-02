@@ -129,3 +129,60 @@ button{
 button:hover{
     background:#1d4ed8;
 }
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+}
+
+.search-input {
+  width: 100%;
+  max-width: 450px;
+  padding: 14px 20px;
+  font-size: 16px;
+  border: 2px solid #ddd;
+  border-radius: 50px;
+  outline: none;
+  background: #fff;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.search-input::placeholder {
+  color: #999;
+}
+
+.search-input:focus {
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 4px rgba(79, 70, 229, 0.15);
+}
+
+.no-products {
+  max-width: 500px;
+  margin: 60px auto;
+  padding: 40px 30px;
+  text-align: center;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e5e7eb;
+}
+
+.no-products-icon {
+  font-size: 60px;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.no-products h3 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.no-products p {
+  font-size: 16px;
+  color: #777;
+  line-height: 1.6;
+}
